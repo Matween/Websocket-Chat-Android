@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="io.matic.websocketchat.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_friend_requests"
+        android:orderInCategory="200"
+        android:title="Friend Requestss"
+        android:icon="@drawable/ic_action_notification"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_reconnect"
+        android:orderInCategory="300"
+        android:title="Reconnect"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="400"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>

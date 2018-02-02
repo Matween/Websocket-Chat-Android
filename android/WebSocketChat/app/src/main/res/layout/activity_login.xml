@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.matic.websocketchat.LoginActivity"
+    android:background="@drawable/background1">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        android:paddingTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/loginContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_below="@id/logo"
+        android:paddingTop="50dp"
+        android:layout_margin="28dp">
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginTop="6dp"
+            android:hint="Password"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="22dp"
+            android:background="@color/colorPrimary"
+            android:text="Login"
+            android:textColor="@android:color/background_light" />
+
+        <LinearLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonLogin"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/buttonRegister"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_weight="1"
+                android:background="@color/colorGrayOverlay"
+                android:text="Don't have an account?"
+                android:textColor="@android:color/background_light"
+                android:textAllCaps="false"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarLogin"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
